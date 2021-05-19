@@ -20,11 +20,11 @@ int find_nth_term( int k, int a,int b,int c )
   if( (k > 0 && k <= 20) && (a > 0 && a <= 100) && 
   (b > 0 && b <= 100) && (c > 0 && c <= 100) )
   {  
-  int X=0,Y=0,Z=0;  
-  Z = s1(k-1,a,b,c);
-  Y = s1(k-2,a,b,c);
-  X = s1(k-3,a,b,c);
-  return Z+Y+X;
+      int X=0,Y=0,Z=0;  
+      Z = s1(k-1,a,b,c);
+      Y = s1(k-2,a,b,c);
+      X = s1(k-3,a,b,c);
+      return Z+Y+X;
   }
   else return 0;
 }
